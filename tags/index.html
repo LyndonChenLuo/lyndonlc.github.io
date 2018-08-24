@@ -274,7 +274,43 @@
           
 
   
+       <div onclick="showGitment()" id="gitment_title" class="gitment_title">显示 Gitment 评论</div>
+       <div id="container" style="display:none"></div>
+       <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+       <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+       <script>
+       const myTheme = {
+         render(state, instance) {
+           const container = document.createElement('div');
+           container.lang = "en-US";
+           container.className = 'gitment-container gitment-root-container';
+           container.appendChild(instance.renderHeader(state, instance));
+           container.appendChild(instance.renderEditor(state, instance));
+           container.appendChild(instance.renderComments(state, instance));
+           container.appendChild(instance.renderFooter(state, instance));
+           return container;
+         }
+       }
+       function showGitment() {
+         $("#gitment_title").attr("style", "display:none");
+         $("#container").attr("style", "").addClass("gitment_container");
+         var gitment = new Gitment({
+           id: window.location.pathname,
+           theme: myTheme,
+           owner: '',
+           repo: '',
+           oauth: {
+             client_id: '8d42162ebb96ac967e50',
+             client_secret: '5ee39bbf9fcf684b83c2b15fa534b1148d0fce0d'
+           }
+         });
+         gitment.render('container');
+       }
+       </script>
+   
+    </div>
 
+  
 
 
         </div>
@@ -520,6 +556,43 @@
 
 
 
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'lyndonlc',
+            repo: 'lyndonlc.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '5ee39bbf9fcf684b83c2b15fa534b1148d0fce0d',
+            
+                client_id: '8d42162ebb96ac967e50'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 
