@@ -80,13 +80,12 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta property="og:title" content="Lyndon">
+<meta property="og:url" content="http://yoursite.com/tags/有用功/index.html">
 <meta property="og:site_name" content="Lyndon">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-24T13:59:40.559Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
+<meta name="twitter:title" content="Lyndon">
 
 
 
@@ -116,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/"/>
+  <link rel="canonical" href="http://yoursite.com/tags/有用功/"/>
 
 
 
 
 
-  <title>tags | Lyndon</title>
+  <title>标签: 有用功 | Lyndon</title>
   
 
 
@@ -141,7 +140,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -235,36 +234,54 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-    
-    
-    <div class="post-block page">
-      <header class="post-header">
+  
+  
+  
+  <div class="post-block tag">
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-        
-        
-          
-        
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>有用功<small>标签</small>
+        </h1>
       </div>
+
       
-      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2018/08/25/科学上网不掉线应该怎么做？/" itemprop="url">
+              
+                <span itemprop="name">科学上网不掉线应该怎么做？</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-08-25T09:03:02+08:00"
+              content="2018-08-25" >
+          08-25
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
       
     </div>
-    
-    
-    
+
   </div>
+  
+  
+  
+
+  
 
 
           </div>
@@ -272,47 +289,6 @@
 
 
           
-
-  
-       <div onclick="showGitment()" id="gitment_title" class="gitment_title">显示 Gitment 评论</div>
-       <div id="container" style="display:none"></div>
-       <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-       <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-       <script>
-       const myTheme = {
-         render(state, instance) {
-           const container = document.createElement('div');
-           container.lang = "en-US";
-           container.className = 'gitment-container gitment-root-container';
-           container.appendChild(instance.renderHeader(state, instance));
-           container.appendChild(instance.renderEditor(state, instance));
-           container.appendChild(instance.renderComments(state, instance));
-           container.appendChild(instance.renderFooter(state, instance));
-           return container;
-         }
-       }
-       function showGitment() {
-         $("#gitment_title").attr("style", "display:none");
-         $("#container").attr("style", "").addClass("gitment_container");
-         var gitment = new Gitment({
-           id: window.location.pathname,
-           theme: myTheme,
-
-           owner: "lyndonlc",
-           repo: "lyndonlc.github.io",
-           
-           oauth: {
-             client_id: '8d42162ebb96ac967e50',
-             client_secret: '5ee39bbf9fcf684b83c2b15fa534b1148d0fce0d'
-           }
-         });
-         gitment.render('container');
-       }
-       </script>
-   
-    </div>
-
-  
 
 
         </div>
@@ -529,10 +505,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
@@ -579,30 +551,6 @@
 
     
 
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname, 
-            owner: 'lyndonlc',
-            repo: 'lyndonlc.github.io',
-            
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: '5ee39bbf9fcf684b83c2b15fa534b1148d0fce0d',
-            
-                client_id: '8d42162ebb96ac967e50'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
     
 
 
