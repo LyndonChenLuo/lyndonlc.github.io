@@ -465,9 +465,9 @@ body {
   }
 }
 .footer {
-  position: absolute;
+  position: relative;
   left: 0;
-  bottom: 0;
+  bottom: 200px;
   width: 100%;
   min-height: 50px;
 }
@@ -1992,7 +1992,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff8c0b;
+  background: #ff49ff;
 }
 .links-of-blogroll {
   font-size: 13px;
